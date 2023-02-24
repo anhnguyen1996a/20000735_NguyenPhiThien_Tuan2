@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5a</title>
+</head>
+<style>
+    .box {
+        height: 50vh;
+    }
+    
+    .box1 {
+        list-style: none;
+    }
+    
+    .box1 ul {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        padding-left: 0;
+        font-size: 20px;
+    }
+    
+    .box ul,
+    .box a,
+    p {
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div class="box box1">
+        <h1 id="top">Example Cafe Menu</h1>
+        <ul>
+
+            <li><a href="#Starters">Starters</a></li>
+            <span>|</span>
+            <li><a href="#MainCourses">Main Courses</a></li>
+            <span>|</span>
+            <li><a href="#Deserts">Deserts</a></li>
+        </ul>
+    </div>
+
+    <div class="box box2">
+        <h1 id="Starters">Starters</h1>
+        <ul>
+            <li>Chestnut and Mushroom Goujons (<u>v</u>)</li>
+            <li>Goat Cheese Salad (<u>v</u>)</li>
+            <li>Honey Soy Chicken Kebabs</li>
+            <li>Seafood Salad</li>
+        </ul>
+        <a href="#top">Back to top</a>
+    </div>
+    <div class="box box3">
+        <h1 id="MainCourses">Main Courses</h1>
+        <ul>
+            <li>Spinach and Ricotta Roulade (<u>v</u>)</li>
+            <li>Beef Tournados with Mustard and Dill Sauce</li>
+            <li>Roast Chicken Salad </li>
+            <li>Icelandic Cod with Parsley Sauce</li>
+            <li>Mushroom Wellington> (<u>v</u>)</li>
+        </ul>
+        <a href="#top">Back to top</a>
+    </div>
+    <div class="box box4">
+        <h1 id="Deserts">Deserts</h1>
+        <ul>
+            <li>Lemon Sob(<u>v</u>)</li>
+            <li>Chocolate Mud Pie (<u>v</u>)</li>
+            <li>Pecan Pie</li>
+            <li>Selection of Fine Cheese from Around the World</li>
+        </ul>
+        <a href="#top">Back to top</a>
+        <p>Items marked with a (<u>v</u>) are suitable for vegetarians.</p>
+    </div>
+</body>
+
+</html>

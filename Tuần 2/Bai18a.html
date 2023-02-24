@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 18a</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .form-container {
+            width: 60vw;
+            background-color: #FFD078;
+            box-shadow: 10px 10px 10px 10px gray;
+            font-size: x-large;
+            padding: 20px;
+        }
+        
+        .form-container h2 {
+            text-align: center;
+        }
+        
+        .form-container li {
+            padding-bottom: 20px;
+        }
+        
+        ol {
+            padding: 20px;
+        }
+        
+        .button-wrapper {
+            margin: auto;
+            width: fit-content;
+            display: flex;
+            gap: 25px;
+        }
+        
+        .select-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Servey Form</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim libero, odit itaque quos consectetur in sit hic fugiat nulla, iusto, tenetur minus explicabo eius? Nisi voluptate expedita eum porro modi!
+        </p>
+        <form action="">
+            <ol class="form">
+                <li>
+                    <p>What is your name ?</p>
+                    <input type="text" />
+                </li>
+                <li>
+                    <p>What is your date of birth ?</p>
+                    <br>
+                    <div class="select-wrapper">
+                        <label for="">Month</label>
+                        <select name="" id="" class="select-month">
+                        </select>
+
+                        <label for="">Date</label>
+                        <select name="" id="" class="select-date">
+                        </select>
+
+                        <label for="">Year</label>
+                        <select name="" id="" class="select-year">
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <p>What is your mailing address (if you would like to have a hard copy of our catalog sent to you)?</p>
+                    <textarea name="address" id="" cols="60" rows="5"></textarea>
+                </li>
+
+                <li>
+                    <p>What is your email address?</p>
+                    <input type="email" name="email" id="">
+                </li>
+                <li>
+                    <p>Have you viewed our online product catalog?</p>
+                    <input type="radio" name="dot" id=""> Yes
+                    <input type="radio" name="dot" id=""> No
+                </li>
+                <li>
+                    <p>If so, what product(s), besides the one you are ordering, might you be interested in purchasing in the future? (Check all the apply.)</p>
+                    <input type="checkbox" name="product" id=""> VCR <br>
+                    <input type="checkbox" name="product" id=""> Big Screen TV <br>
+                    <input type="checkbox" name="product" id=""> Audio Equipment <br>
+                    <input type="checkbox" name="product" id=""> Video Equipment <br>
+                    <input type="checkbox" name="product" id=""> Camera Equipment <br>
+                    <input type="checkbox" name="product" id=""> Other <input type="text" value="Please List:">
+                </li>
+                <li>
+                    <p>Do you have any question, comments or suggestions before proceeding to the Order Form?</p>
+                    <textarea name="ques" id="" cols="60" rows="5"></textarea>
+                </li>
+            </ol>
+
+            <div class="button-wrapper">
+                <input type="button" value="Send form">
+                <input type="button" value="Clear form">
+            </div>
+        </form>
+
+    </div>
+
+    <script>
+        for (let i = 1; i <= 12; i++) {
+            let tem1 = `<option value="${i}">${i}</option>`;
+            document.querySelector(".select-month").insertAdjacentHTML("beforeend", tem1);
+        }
+
+        for (let i = 1; i <= 31; i++) {
+            let tem1 = `<option value="${i}">${i}</option>`;
+            document.querySelector(".select-date").insertAdjacentHTML("beforeend", tem1);
+        }
+        for (let i = 19; i <= 99; i++) {
+            let tem1 = `<option value="${i}">${i}</option>`;
+            document.querySelector(".select-year").insertAdjacentHTML("beforeend", tem1);
+        }
+    </script>
+</body>
+
+</html>

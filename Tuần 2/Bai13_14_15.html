@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 13 & 14 & 15</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 40%;
+        }
+        
+        form {
+            display: flex;
+            gap: 50px;
+            flex-direction: column;
+        }
+        
+        .bai15 .box {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="bai13">
+            <label for="name1">Name:</label><br>
+            <input type="text" name="name1" required>
+            <br>
+            <input type="submit" value="Submit">
+        </div>
+        <div class="bai14">
+            <label for="name2">Name:</label><br>
+            <input type="text" name=name2 required><br>
+
+            <label for="phone">Telephone number:</label><br>
+            <input type="number" name="phone" id="" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="" required><br>
+
+            <label for="color">Favorite Color:</label><br>
+            <input type="color" name="color" id=""><br>
+
+            <label for="birth">Date of Birth:</label><br>
+            <input type="date" name="birth" id=""><br>
+
+            <br><input type="submit" value="Submit">
+        </div>
+
+        <div class="bai15">
+            <h2>Contact Us</h2>
+            <p>Use the following form to send a message to Example Cafe</p>
+            <div class="box">
+                <label for="email">Your email</label>
+                <input type="email" name="email" id="" required><br>
+            </div>
+            <div class="box">
+                <label for="message">Message</label>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="box">
+                <label for="ask">How did you hear of us?</label>
+                <select>
+                    <Option>Google</Option>
+                    <Option>Facebook</Option>
+                    <Option>Twitter</Option>
+                    <Option>Instagram</Option>
+                </select>
+            </div>
+            <div class="box">
+                <label for="news">Newsletter</label>
+                <input type="checkbox" name="news" id="" required> Ensure this box is checked if you would like to receive email updates
+            </div>
+            <input type="button" value="Send message">
+        </div>
+    </form>
+</body>
+
+</html>

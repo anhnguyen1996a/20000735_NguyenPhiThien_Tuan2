@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+</head>
+<style>
+    .list-wrapper {
+        display: flex;
+    }
+    
+    .list1 {
+        margin-right: 20px;
+    }
+    
+    ul.roman {
+        list-style: upper-roman;
+    }
+    
+    ul.number {
+        list-style: number;
+    }
+    
+    .nested-list ul,
+    .nested-list p {
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div class="list-wrapper">
+        <div class="list list1">
+            <h1>Hệ thống công nghệ Web</h1>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>Boostrap</li>
+            </ul>
+        </div>
+
+        <div class="list list2">
+            <h1>Hệ thống công nghệ Web</h1>
+            <ul class="roman">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>Boostrap</li>
+            </ul>
+        </div>
+    </div>
+    <div class="nested-list">
+        <h1>Hệ thống công nghệ Web</h1>
+        <ul class="roman">
+            <li>HTML</li>
+            <li>CSS</li>
+            <ul>
+                <li>Inline</li>
+                <li>Internal</li>
+                <li>External</li>
+            </ul>
+            <li>JavaScript</li>
+            <ul class="number">
+                <li>DOM</li>
+                <li>Events</li>
+                <li>Forms</li>
+                <li>Regular Expression</li>
+            </ul>
+            <li>JQuery</li>
+            <li>Boostrap</li>
+        </ul>
+
+        <p><u><i><strong>HTML lists</strong></i></u> allow web developers to group a set of realated items in lists. There are three type of lists: <strong>order</strong>, <i>unorderlist</i>, <u>description lists</u>.
+        </p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 18b</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #browser {
+            width: 40vw;
+            box-shadow: 5px 5px 5px 5px gray;
+            padding: 10px;
+        }
+        
+        #browser form ul {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            font-size: x-large;
+        }
+        
+        input {
+            width: 15vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="browser">
+        <form action="">
+            <ul>
+                <li><label for="">Browser:</label>
+                    <input type="text" list="one">
+                    <datalist id="one">
+                        <option value="Brackets" />
+                        <option value="Coda" />
+                        <option value="Dreamweaver" />
+                    </datalist>
+                </li>
+                <li>
+                    <label for="">Username:</label>
+                    <input type="text"><br> <br>
+                </li>
+                <li>
+
+                    <div class="">
+                        <label for="">Encryption:</label>
+                        <select name="" id=""><option value="">2048(High Grade)</option> <option value="">2024(High Grade)</option></select>
+                    </div>
+                    <div class="">
+                        <span>0</span>
+                        <input type="range" name="amountRange" min="0" max="100" value="50" oninput="this.form.amountInput.value=this.value" />
+
+                        <span>100</span>
+                    </div>
+                    <div class="">
+                        <input type="number" name="amountInput" min="0" max="100" value="50" oninput="this.form.amountRange.value=this.value" />
+                    </div>
+                </li>
+                <li>
+                    <label for="">Birthday:</label>
+                    <input type="date">
+                </li>
+                <li>
+                    <label for="">Select your favorite color:</label>
+                    <input type="color" value="#f5391b">
+                </li>
+                <li>
+                    <label for="">Birthday (month and year):</label>
+                    <input type="month">
+                </li>
+                <li>
+                    <label for="">Select a week:</label>
+                    <input type="week">
+                </li>
+                <li>
+                    <label for="">Select a time:</label>
+                    <input type="time"><br>
+                </li>
+                <li>
+                    <label for="">Birthday(Date and time):</label>
+                    <input type="datetime">
+                </li>
+
+                <li>
+                    <label for="">Email:</label>
+                    <input type="email">
+                </li>
+                <li>
+                    <label for="">Search Google</label>
+                    <input type="text">
+                </li>
+                <li>
+                    <label for="">Telephone:</label>
+                    <input type="text">
+                </li>
+                <li>
+                    <label for="">Add your homepage:</label>
+                    <input type="text">
+                </li>
+                <li>
+                    <button>Submit</button>
+                </li>
+                <li>
+                    <p><b>Note:</b>The datalist tag is not supported in Safari or IE9(and earlier).</p>
+
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+
+</html>
